@@ -113,3 +113,35 @@ body {
   background-color: #333;
   color: white;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    display: grid;
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+
+  .contact form {
+    padding: 10px;
+  }
+}
